@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\dotnet-squadManager.props" />
+</Project>
