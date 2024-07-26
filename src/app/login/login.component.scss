@@ -1,0 +1,65 @@
+.custom-card {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+
+.header-card {
+  background-color: #ffffff;
+  color: #333;
+  text-align: center;
+  padding: 16px;
+  border-radius: 8px 8px 0 0;
+}
+
+.form-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.form-field label {
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.form-field input {
+  padding: 8px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.button {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+.login-btn {
+  font-size: 16px;
+  padding: 12px 20px;
+  background-color: #2196f3;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.forgot-btn {
+  font-size: 16px;
+  padding: 12px 20px;
+  background: none;
+  border: none;
+  color: #2196f3;
+  cursor: pointer;
+}

@@ -1,0 +1,7 @@
+<mat-drawer-container class="custom-drawer-container" [hasBackdrop]="true">
+  <mat-drawer #drawer [mode]="'side'">I'm a custom drawer</mat-drawer>
+  <mat-drawer-content>
+    <h1>Content Area</h1>
+    <button mat-raised-button (click)="drawer.toggle()">Toggle Drawer</button>
+  </mat-drawer-content>
+</mat-drawer-container>

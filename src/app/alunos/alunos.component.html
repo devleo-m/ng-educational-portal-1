@@ -1,0 +1,33 @@
+<div class="list-card">
+  <div class="search-bar">
+    <div class="form-field">
+      <label for="search">Pesquisar Alunos</label>
+      <input type="text" id="search" placeholder="Nome ou E-mail" [(ngModel)]="searchQuery">
+    </div>
+    <button class="search-btn" (click)="onSearch()">Pesquisar</button>
+  </div>
+
+  <table class="custom-table">
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>CPF</th>
+        <th>E-mail</th>
+        <th>Curso</th>
+        <th>Ações</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let student of filteredStudents">
+        <td>{{student.fullName}}</td>
+        <td>{{student.cpf}}</td>
+        <td>{{student.email}}</td>
+        <td>{{student.course}}</td>
+        <td>
+          <button class="edit-btn" (click)="onEdit(student)">Editar</button>
+          <button class="delete-btn" (click)="onDelete(student)">Deletar</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

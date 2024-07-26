@@ -1,0 +1,26 @@
+<div class="home-card">
+  <h2>Próximas Atividades</h2>
+  <div class="card-container">
+    <div *ngFor="let activity of upcomingActivities" class="activity-card">
+      <div class="card-title">{{ activity.title }}</div>
+      <div class="card-content">{{ activity.description }}</div>
+      <div class="card-footer">Até: {{ activity.dueDate | date }}</div>
+    </div>
+  </div>
+
+  <h2>Minhas Disciplinas</h2>
+  <div class="card-container">
+    <div *ngFor="let subject of currentSubjects" class="subject-card">
+      <div class="card-title">{{ subject.name }}</div>
+      <div class="card-content">{{ subject.description }}</div>
+    </div>
+  </div>
+
+  <h2>Cursos Extras</h2>
+  <div class="card-container">
+    <div *ngFor="let extraCourse of extraCourses" class="extra-course-card">
+      <div class="card-title">{{ extraCourse.name }}</div>
+      <div class="card-content">{{ extraCourse.description }}</div>
+    </div>
+  </div>
+</div>

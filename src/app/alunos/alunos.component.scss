@@ -1,0 +1,77 @@
+.list-card {
+  margin: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-field label {
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.form-field input {
+  padding: 8px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search-btn {
+  font-size: 16px;
+  padding: 10px 20px;
+  background-color: #3f51b5; /* Indigo */
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.custom-table th, .custom-table td {
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+
+.custom-table th {
+  background-color: #f5f5f5;
+  text-align: left;
+}
+
+.custom-table td {
+  background-color: #ffffff;
+}
+
+.edit-btn, .delete-btn {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.edit-btn {
+  background-color: #3f51b5; /* Indigo */
+  color: #ffffff;
+  margin-right: 5px;
+}
+
+.delete-btn {
+  background-color: #f44336; /* Red */
+  color: #ffffff;
+}

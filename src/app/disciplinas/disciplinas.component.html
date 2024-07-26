@@ -1,0 +1,9 @@
+<div class="subjects-card">
+  <h2>Disciplinas do Curso</h2>
+  <div *ngFor="let semester of semesters">
+    <h3>{{ semester.semester }}</h3>
+    <div *ngFor="let subject of semester.subjects" class="subject-card">
+      <div class="subject-title">{{ subject }}</div>
+    </div>
+  </div>
+</div>

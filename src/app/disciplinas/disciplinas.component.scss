@@ -1,0 +1,29 @@
+.subjects-card {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #2c2c2c; /* Adicione um fundo para melhor contraste */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #e9e0e4;
+}
+
+.subject-card {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background-color: #3f3f3f; /* Fundo diferente para cartões individuais */
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.subject-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+h2, h3 {
+  margin: 0.5rem 0;
+  color: #ffffff; /* Melhorar a visibilidade do texto */
+}

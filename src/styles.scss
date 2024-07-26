@@ -1,0 +1,139 @@
+/* Global Styles */
+
+/* Base Styles */
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Roboto', 'Helvetica Neue', sans-serif;
+  color: #333;
+  background-color: #fafafa; /* Light grey background for a clean look */
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the body takes full viewport height */
+}
+
+/* Layout Helpers */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -10px; /* Offset padding on columns */
+}
+
+.column {
+  padding: 10px;
+  flex: 1;
+  min-width: 0; /* Ensure columns shrink properly */
+}
+
+/* Header and Footer */
+header {
+  background-color: #3f51b5; /* Indigo background */
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  background-color: #303f9f; /* Darker indigo */
+  color: #ffffff;
+  padding: 15px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Card Styles */
+.mat-card {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  margin-bottom: 20px;
+  overflow: hidden; /* Ensure content doesn't overflow */
+}
+
+.mat-card-header {
+  background-color: #3949ab; /* Slightly different shade of indigo */
+  color: #ffffff;
+  padding: 16px;
+}
+
+.mat-card-content {
+  padding: 20px;
+}
+
+/* Form Styles */
+.mat-form-field {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.mat-form-field .mat-form-field-flex {
+  background-color: #e8eaf6; /* Light indigo background */
+}
+
+.mat-form-field label {
+  color: #303f9f; /* Darker indigo */
+}
+
+.mat-form-field input {
+  color: #333;
+}
+
+/* Button Styles */
+button.mat-raised-button {
+  font-size: 16px;
+  padding: 12px 24px;
+  border-radius: 4px;
+}
+
+button.mat-raised-button.primary {
+  background-color: #3f51b5; /* Indigo */
+  color: #ffffff;
+}
+
+button.mat-button {
+  font-size: 16px;
+}
+
+/* Link Styles */
+a {
+  color: #3f51b5; /* Indigo */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 15px;
+  font-weight: 400; /* Light weight for headings */
+}
+
+p {
+  margin: 0 0 15px;
+  line-height: 1.6; /* Improve readability */
+}
+
+/* Miscellaneous */
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.full-height {
+  height: 100vh; /* Full viewport height */
+}

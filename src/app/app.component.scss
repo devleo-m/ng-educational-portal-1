@@ -1,0 +1,142 @@
+/* Global Styles */
+
+/* Base Styles */
+$primary-color: #3498db; /* Bright Blue */
+$secondary-color: #9b59b6; /* Purple */
+$accent-color: #e74c3c; /* Red */
+$background-color: #f2f4f7; /* Light Gray Background */
+$text-primary: #2c3e50; /* Dark Gray for Text */
+$text-secondary: #7f8c8d; /* Medium Gray for Text */
+$border-color: #dcdcdc; /* Light Border Color */
+
+:host {
+  --primary-color: #{$primary-color};
+  --secondary-color: #{$secondary-color};
+  --accent-color: #{$accent-color};
+  --background-color: #{$background-color};
+  --text-primary: #{$text-primary};
+  --text-secondary: #{$text-secondary};
+  --border-color: #{$border-color};
+
+  font-family: 'Roboto', 'Helvetica Neue', sans-serif;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--text-primary);
+  background-color: var(--background-color);
+}
+
+/* Typography */
+h1 {
+  font-size: 3rem;
+  color: var(--text-primary);
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.05em;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+p {
+  margin: 0;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* Layout */
+main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  position: relative;
+}
+
+/* Logo */
+.angular-logo {
+  max-width: 8rem;
+}
+
+/* Content */
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+  margin-bottom: 2rem;
+  padding: 1rem;
+}
+
+.content h1 {
+  margin-top: 1rem;
+}
+
+.content p {
+  margin-top: 0.5rem;
+}
+
+/* Divider */
+.divider {
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, $accent-color 0%, $primary-color 50%, $secondary-color 100%);
+  margin: 1rem 0;
+}
+
+/* Pills */
+.pill-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.pill {
+  display: flex;
+  align-items: center;
+  background: $primary-color;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  border: none;
+  transition: background 0.3s ease;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.4;
+  text-decoration: none;
+}
+
+.pill:hover {
+  background: darken($primary-color, 10%);
+}
+
+/* Social Links */
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.social-links path {
+  transition: fill 0.3s ease;
+  fill: $text-secondary;
+}
+
+.social-links a:hover path {
+  fill: $text-primary;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .content {
+    padding: 1rem;
+  }
+
+  .divider {
+    background: linear-gradient(180deg, $accent-color 0%, $primary-color 50%, $secondary-color 100%);
+  }
+}
